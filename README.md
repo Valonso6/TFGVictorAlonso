@@ -10,6 +10,8 @@
 
 -Rampa: Funcionamiento del motor con aceleración constante hasta un valor de velocidad máxima definido. Finales de carrera 
         implementados por interrupción. Display del tiempo y velocidad de cada carril.
+
+-ROTAROD: Código completo para el funcionamiento del rotarod, implementando 6 finales de carrera y velocidades hasta los 80rpm, y con función de rampa inversa incluida y modo de espera antes de comenzar el experimento.
         
 -Vector velocidad: Hoja de texto donde está guardado el vector velocidad completo(hasta los 600 rpm)
 
