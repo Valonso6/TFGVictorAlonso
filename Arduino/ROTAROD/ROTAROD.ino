@@ -13,12 +13,12 @@ LiquidCrystal lcd(16, 17, 23, 25, 27, 29);
 #define LCD_PINS_D6 27      // LCD signal pin, conectado a GADGETS3D shield LCD6
 #define LCD_PINS_D7 29      // LCD signal pin, conectado a GADGETS3D shield LCD7
 
-#define X1_PIN 2         // PIN para el fin de carrera del carril 1 (1: presionado (true))
-#define X2_PIN 3         // PIN para el fin de carrera del carril 2 (1: presionado (true))
-#define X3_PIN 18        // PIN para el fin de carrera del carril 3 (1: presionado (true))
-#define X4_PIN 19        // PIN para el fin de carrera del carril 4 (1: presionado (true))
-#define X5_PIN 20        // PIN para el fin de carrera del carril 5 (1: presionado (true))
-#define X6_PIN 21        // PIN para el fin de carrera del carril 6 (1: presionado (true))
+#define X1_PIN 3         // PIN para el fin de carrera del carril 1 (1: presionado (true))
+#define X2_PIN 2         // PIN para el fin de carrera del carril 2 (1: presionado (true))
+#define X3_PIN 14        // PIN para el fin de carrera del carril 3 (1: presionado (true))
+#define X4_PIN 15        // PIN para el fin de carrera del carril 4 (1: presionado (true))
+#define X5_PIN 18        // PIN para el fin de carrera del carril 5 (1: presionado (true))
+#define X6_PIN 19        // PIN para el fin de carrera del carril 6 (1: presionado (true))
 
 #define X_STEP_PIN 54       // PIN de los pasos del controlador DRV8825 del motor paso a paso
 #define X_DIR_PIN 55        // PIN de la direccion del controlador DRV8825 del motor paso a paso
@@ -906,25 +906,25 @@ void experimento()       // Comienzo del experimento según el modo elegido
     {
       if (segundos < 10)      
       {
-        lcd.setCursor(6, 2);
+        lcd.setCursor(11, 2);
       } 
       if (segundos >= 10)     
       {
-        lcd.setCursor(5, 2);       
+        lcd.setCursor(10, 2);       
       }
       if (segundos >= 100)     
       {
-        lcd.setCursor(4, 2);      
+        lcd.setCursor(9, 2);      
       }
       lcd.print(segundos);
       if (v<10)
       {
-        lcd.setCursor(6,3);
+        lcd.setCursor(10,3);
         lcd.print(v);
       }
       else if (v>=10 and v<100)
       {
-        lcd.setCursor(5,3);
+        lcd.setCursor(9,3);
         lcd.print(v);
       }
     }
